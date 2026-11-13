@@ -1,0 +1,313 @@
+{
+  "status": "pass",
+  "scope": "Finite identities and certificates; analytical proofs remain authoritative.",
+  "numpy_version": "2.3.5",
+  "tolerance": 2e-11,
+  "script_sha256": "c5666b285bdcfbd3a7da83473dd65245c2cac72c0273e85bf0678199a8cf9b48",
+  "ideal_certificates": [
+    {
+      "dimension": 2,
+      "boundary_orders": 9,
+      "cross_min_eigenvalue": -6.370780900427259e-17,
+      "kernel_min_eigenvalue": -3.019652917083294e-17,
+      "cross_trace_error": 2.220446049250313e-16,
+      "kernel_trace_error": 2.220446049250313e-16,
+      "good_marginal_error": 3.5381555418772973e-17,
+      "bad_marginal_error": 2.7755575615628914e-17,
+      "bell_compression_error": 2.220446049250313e-16,
+      "symmetric_bell_bound_error": 1.1102230246251565e-16,
+      "next_integer_witness_violation": 0.0062500000000000056
+    },
+    {
+      "dimension": 3,
+      "boundary_orders": 64,
+      "cross_min_eigenvalue": -8.091201004036082e-17,
+      "kernel_min_eigenvalue": -1.774518945352092e-17,
+      "cross_trace_error": 2.220446049250313e-16,
+      "kernel_trace_error": 1.1102230246251565e-16,
+      "good_marginal_error": 1.0693553686590446e-17,
+      "bad_marginal_error": 0.0,
+      "bell_compression_error": 4.440892098500626e-16,
+      "symmetric_bell_bound_error": 3.3306690738754696e-16,
+      "next_integer_witness_violation": 0.00018993352326684976
+    },
+    {
+      "dimension": 4,
+      "boundary_orders": 225,
+      "cross_min_eigenvalue": -6.677183561591511e-17,
+      "kernel_min_eigenvalue": -3.4582580980761266e-18,
+      "cross_trace_error": 0.0,
+      "kernel_trace_error": 0.0,
+      "good_marginal_error": 6.009258394948637e-18,
+      "bad_marginal_error": 2.477680709400288e-17,
+      "bell_compression_error": 2.220446049250313e-16,
+      "symmetric_bell_bound_error": 0.0,
+      "next_integer_witness_violation": 1.728429203539522e-05
+    },
+    {
+      "dimension": 5,
+      "boundary_orders": 576,
+      "cross_min_eigenvalue": -5.662285090112027e-17,
+      "kernel_min_eigenvalue": -5.0888119427287304e-18,
+      "cross_trace_error": 3.3306690738754696e-16,
+      "kernel_trace_error": 2.220446049250313e-16,
+      "good_marginal_error": 2.4540180309151013e-18,
+      "bad_marginal_error": 2.1666689270499745e-17,
+      "bell_compression_error": 0.0,
+      "symmetric_bell_bound_error": 1.1102230246251565e-16,
+      "next_integer_witness_violation": 2.7729636048606787e-06
+    },
+    {
+      "dimension": 6,
+      "boundary_orders": 1225,
+      "cross_min_eigenvalue": -4.893151926131993e-17,
+      "kernel_min_eigenvalue": -3.527235502710122e-18,
+      "cross_trace_error": 4.440892098500626e-16,
+      "kernel_trace_error": 2.220446049250313e-16,
+      "good_marginal_error": 1.738293223275747e-18,
+      "bad_marginal_error": 3.6799042000400975e-18,
+      "bell_compression_error": 4.440892098500626e-16,
+      "symmetric_bell_bound_error": 4.440892098500626e-16,
+      "next_integer_witness_violation": 6.293678126191582e-07
+    }
+  ],
+  "noisy_certificates": [
+    {
+      "dimension": 2,
+      "visibility_fraction_of_ceiling": 0,
+      "visibility": 0.0,
+      "both_bad_min_eigenvalue": 0.125,
+      "good_marginal_error": 0.0,
+      "bad_marginal_error": 0.0,
+      "normalization_error": 0.0,
+      "above_ceiling_residual_bell_weight": -0.0006249999999999867
+    },
+    {
+      "dimension": 2,
+      "visibility_fraction_of_ceiling": 0.5,
+      "visibility": 0.4,
+      "both_bad_min_eigenvalue": 0.06249999999999993,
+      "good_marginal_error": 0.0,
+      "bad_marginal_error": 1.962615573354719e-17,
+      "normalization_error": 0.0,
+      "above_ceiling_residual_bell_weight": -0.0006249999999999867
+    },
+    {
+      "dimension": 2,
+      "visibility_fraction_of_ceiling": 1,
+      "visibility": 0.8,
+      "both_bad_min_eigenvalue": 1.9558909160712995e-17,
+      "good_marginal_error": 0.0,
+      "bad_marginal_error": 8.777083671441753e-17,
+      "normalization_error": 0.0,
+      "above_ceiling_residual_bell_weight": -0.0006249999999999867
+    },
+    {
+      "dimension": 3,
+      "visibility_fraction_of_ceiling": 0,
+      "visibility": 0.0,
+      "both_bad_min_eigenvalue": 0.037037037037037035,
+      "good_marginal_error": 0.0,
+      "bad_marginal_error": 0.0,
+      "normalization_error": 2.220446049250313e-16,
+      "above_ceiling_residual_bell_weight": -0.00012345679012345416
+    },
+    {
+      "dimension": 3,
+      "visibility_fraction_of_ceiling": 0.5,
+      "visibility": 0.45,
+      "both_bad_min_eigenvalue": 0.018518518518518507,
+      "good_marginal_error": 1.0408340855860843e-17,
+      "bad_marginal_error": 2.9027475788800784e-17,
+      "normalization_error": 2.220446049250313e-16,
+      "above_ceiling_residual_bell_weight": -0.00012345679012345416
+    },
+    {
+      "dimension": 3,
+      "visibility_fraction_of_ceiling": 1,
+      "visibility": 0.9,
+      "both_bad_min_eigenvalue": -1.8340194427216088e-17,
+      "good_marginal_error": 2.0816681711721685e-17,
+      "bad_marginal_error": 2.943923360032078e-17,
+      "normalization_error": 0.0,
+      "above_ceiling_residual_bell_weight": -0.00012345679012345416
+    },
+    {
+      "dimension": 4,
+      "visibility_fraction_of_ceiling": 0,
+      "visibility": 0.0,
+      "both_bad_min_eigenvalue": 0.015625,
+      "good_marginal_error": 0.0,
+      "bad_marginal_error": 0.0,
+      "normalization_error": 0.0,
+      "above_ceiling_residual_bell_weight": -3.9062500000006106e-05
+    },
+    {
+      "dimension": 4,
+      "visibility_fraction_of_ceiling": 0.5,
+      "visibility": 0.47058823529411764,
+      "both_bad_min_eigenvalue": 0.007812499999999995,
+      "good_marginal_error": 0.0,
+      "bad_marginal_error": 1.2018516789897274e-17,
+      "normalization_error": 0.0,
+      "above_ceiling_residual_bell_weight": -3.9062500000006106e-05
+    },
+    {
+      "dimension": 4,
+      "visibility_fraction_of_ceiling": 1,
+      "visibility": 0.9411764705882353,
+      "both_bad_min_eigenvalue": -4.2820401790571926e-18,
+      "good_marginal_error": 0.0,
+      "bad_marginal_error": 0.0,
+      "normalization_error": 0.0,
+      "above_ceiling_residual_bell_weight": -3.9062500000006106e-05
+    },
+    {
+      "dimension": 5,
+      "visibility_fraction_of_ceiling": 0,
+      "visibility": 0.0,
+      "both_bad_min_eigenvalue": 0.008,
+      "good_marginal_error": 0.0,
+      "bad_marginal_error": 0.0,
+      "normalization_error": 4.440892098500626e-16,
+      "above_ceiling_residual_bell_weight": -1.60000000000025e-05
+    },
+    {
+      "dimension": 5,
+      "visibility_fraction_of_ceiling": 0.5,
+      "visibility": 0.4807692307692308,
+      "both_bad_min_eigenvalue": 0.003999999999999995,
+      "good_marginal_error": 4.336808689942018e-18,
+      "bad_marginal_error": 3.10377371982218e-17,
+      "normalization_error": 4.440892098500626e-16,
+      "above_ceiling_residual_bell_weight": -1.60000000000025e-05
+    },
+    {
+      "dimension": 5,
+      "visibility_fraction_of_ceiling": 1,
+      "visibility": 0.9615384615384616,
+      "both_bad_min_eigenvalue": -1.4277174818022795e-18,
+      "good_marginal_error": 8.673617379884035e-18,
+      "bad_marginal_error": 3.1055910950456285e-17,
+      "normalization_error": 1.1102230246251565e-16,
+      "above_ceiling_residual_bell_weight": -1.60000000000025e-05
+    }
+  ],
+  "raw_kraus_checks": [
+    {
+      "dimension": 2,
+      "orders": 1,
+      "kraus_tuples": 4,
+      "choi_error": 1.1102230246251565e-16
+    },
+    {
+      "dimension": 2,
+      "orders": 2,
+      "kraus_tuples": 16,
+      "choi_error": 1.6184142622847344e-16
+    },
+    {
+      "dimension": 2,
+      "orders": 3,
+      "kraus_tuples": 64,
+      "choi_error": 1.594436429147036e-16
+    },
+    {
+      "dimension": 2,
+      "orders": 4,
+      "kraus_tuples": 256,
+      "choi_error": 2.2845722026868423e-16
+    },
+    {
+      "dimension": 2,
+      "orders": 5,
+      "kraus_tuples": 1024,
+      "choi_error": 3.5381555418772976e-16
+    },
+    {
+      "dimension": 3,
+      "orders": 2,
+      "kraus_tuples": 81,
+      "choi_error": 2.3961800113314623e-16
+    },
+    {
+      "dimension": 3,
+      "orders": 3,
+      "kraus_tuples": 729,
+      "choi_error": 2.2945611749239996e-16
+    }
+  ],
+  "controller_checks": [
+    {
+      "orders_per_device": 3,
+      "devices": 2,
+      "dimension": 2,
+      "ancilla_dimension": 2,
+      "visibility": 0,
+      "choi_simulation_error": 1.6504201756048433e-17,
+      "trace_preserving_error": 4.002994020228012e-16
+    },
+    {
+      "orders_per_device": 3,
+      "devices": 2,
+      "dimension": 2,
+      "ancilla_dimension": 2,
+      "visibility": 0.8,
+      "choi_simulation_error": 2.076745677595165e-17,
+      "trace_preserving_error": 4.002994020228012e-16
+    },
+    {
+      "orders_per_device": 3,
+      "devices": 2,
+      "dimension": 2,
+      "ancilla_dimension": 2,
+      "visibility": 1,
+      "choi_simulation_error": 2.2518743200705362e-17,
+      "trace_preserving_error": 4.002994020228012e-16
+    }
+  ],
+  "qubit_noisy_examples": [
+    {
+      "orders": 1,
+      "success_probability": 1.0,
+      "entanglement_fidelity": 0.25,
+      "pure_state_fidelity": 0.5
+    },
+    {
+      "orders": 2,
+      "success_probability": 0.6,
+      "entanglement_fidelity": 0.375,
+      "pure_state_fidelity": 0.5833333333333334
+    },
+    {
+      "orders": 9,
+      "success_probability": 0.2888888888888889,
+      "entanglement_fidelity": 0.7115384615384616,
+      "pure_state_fidelity": 0.8076923076923077
+    },
+    {
+      "orders": 10,
+      "success_probability": 0.27999999999999997,
+      "entanglement_fidelity": 0.7321428571428571,
+      "pure_state_fidelity": 0.8214285714285714
+    },
+    {
+      "orders": 100,
+      "success_probability": 0.20800000000000002,
+      "entanglement_fidelity": 0.9639423076923077,
+      "pure_state_fidelity": 0.9759615384615384
+    },
+    {
+      "orders": 1000,
+      "success_probability": 0.2008,
+      "entanglement_fidelity": 0.9962649402390438,
+      "pure_state_fidelity": 0.9975099601593626
+    },
+    {
+      "orders": 1000000,
+      "success_probability": 0.2000008,
+      "entanglement_fidelity": 0.9999962500149999,
+      "pure_state_fidelity": 0.99999750001
+    }
+  ]
+}
