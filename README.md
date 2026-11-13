@@ -34,10 +34,28 @@ The exact ideal threshold is a boundary of **antidegradability**. Positive capac
 | Why is the ideal threshold exact? | [Antidegradability boundary](science/ideal_boundary.md) |
 | How does inaccessible control noise change the result? | [Unobserved dephasing](science/unobserved_dephasing.md) |
 | What do the capacities, heralding figures and resource costs mean? | [Operational consequences](science/operational_consequences.md) |
+| How do I learn the prerequisites and follow the whole argument? | [Learning route](learning/README.md), [Wilde bridge](learning/ANCHOR_AND_BRIDGE.md), and [30 milestones](learning/MILESTONES.md) |
 | Which results and proof tools are inherited? | [Related work](references/RELATED_WORK.md) and [bibliography](references/REFERENCES.bib) |
 | How can the finite calculations be reproduced? | [Verification guide](verification/README.md) |
 
 The cyclic channel and its heralded and two-way-assisted communication properties were established by [Chiribella, Wilson and Chau](https://arxiv.org/abs/2005.00618). The present results concern the complete channel's unassisted capacities. The proofs use established isotropic-state compatibility geometry; the [related-work account](references/RELATED_WORK.md) identifies the channel-specific addition and the shared foundations.
+
+## Learn the argument
+
+The selected educational source is Mark M. Wilde's *Quantum Information Theory*, second edition (Cambridge University Press, 2017). The [source bridge](learning/ANCHOR_AND_BRIDGE.md) identifies a short reading route, translates conventions, and supplies the steps from textbook channels and capacities to this cyclic-order construction. The [milestone map](learning/MILESTONES.md) organizes the prerequisites and the contribution into 30 connected understanding targets.
+
+Start with the [learning overview](learning/README.md) for the physical question and worked-example route. For direct theorem access, use the scientific pages above. The [LLM reading guide](llms.txt) maps common questions to these authoritative files.
+
+## Reproduce the checks
+
+With Python 3.10 or later, run from the repository root:
+
+```bash
+python -m pip install -r requirements.txt
+OPENBLAS_NUM_THREADS=1 python verification/verify_results.py --output verification/results.json
+```
+
+The [verification guide](verification/README.md) specifies the tested dimensions, tolerances, saved results, and optional figure-generation command. These finite checks support the analytical proofs; they do not determine capacities outside the proved regions.
 
 ## Purpose and contact
 

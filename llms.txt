@@ -1,0 +1,33 @@
+# Cyclic Order Capacity Limits
+
+This repository studies unassisted quantum and private communication through independent completely depolarizing channels traversed in coherent superpositions of cyclic orders. Read the complete receiver channel, including unsuccessful outcomes, together with the charged underlying channel uses.
+
+## Start with the question
+
+- README.md: principal results, assumptions, reading routes and reproduction entrypoint.
+- science/operational_consequences.md: why a high-fidelity accepted branch can coexist with zero unassisted capacity; assisted comparisons and per-slot costs.
+
+## Learn the project
+
+- learning/README.md: physical motivation and a route through the learning material.
+- learning/ANCHOR_AND_BRIDGE.md: the sole educational anchor, Wilde's Quantum Information Theory, second edition (2017); verified companion-version locators, notation translation and the extra steps required by this project.
+- learning/MILESTONES.md: exactly 30 project-defined understanding targets, from prerequisites to the complete contribution. This is a shared scientific map, independent of any reader's progress.
+
+## Find a theorem or proof
+
+- science/channel_model.md: independent depolarizing slots, cyclic Kraus blocks, uniform-controller channel, full-input independence, receiver simulation and correlated controller preparations across disjoint devices.
+- science/ideal_boundary.md: normalized flagged Choi state, symmetric extension, exact uniform-controller antidegradability boundary, necessary witness and explicit sufficient construction.
+- science/unobserved_dephasing.md: actual inaccessible-record dephasing, the fixed-output limiting channel, its exact antidegradability ceiling, and the affine transfer to every finite order count.
+- science/operational_consequences.md: zero quantum and standard private capacity, accepted fidelity conventions, numerical examples, assistance and resource accounting.
+
+## Check attribution and calculations
+
+- references/RELATED_WORK.md: inherited channel construction, isotropic compatibility geometry, internal antecedents, contribution and limits of the literature comparison.
+- references/REFERENCES.bib: bibliographic identities and pinned source references.
+- verification/README.md: commands, finite scope, tolerances and interpretation of the numerical checks.
+- verification/verify_results.py and verification/results.json: physical Kraus enumeration, extension certificates, controller simulation and exact-formula examples.
+- verification/plot_example.py and figures/qubit_dephasing.svg: the accepted-fidelity/success example, evaluated from exact formulas at integer order counts.
+
+## Keep the operational distinctions
+
+The ideal iff boundary is for the uniform controller; all allowed independent preparations inherit zero capacities inside it. Non-antidegradability above a boundary does not establish positive capacity. The noise theorem assumes a physical dephasing channel with an inaccessible record, rather than only a visibility inferred from the reduced controller. Controller preparation must factor from the entire encoded target/reference input. One effective invocation consumes N underlying channel uses. Quantum and private capacity are unassisted; private capacity gives the eavesdropper the full complementary environment. Heralded or two-way-assisted communication is a different operational task.
