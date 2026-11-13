@@ -6,21 +6,21 @@ The cyclic channel formula and its uniform-control flag decomposition originate 
 
 ## 1. Registers, independence, and resource accounting
 
-Let $d\ge 2$ and $N\ge 1$ be integers. The input target $T$ and output target $B$ have dimension $d$. Each of the $N$ physical slots implements
+Let $`d\ge 2`$ and $`N\ge 1`$ be integers. The input target $`T`$ and output target $`B`$ have dimension $`d`$. Each of the $`N`$ physical slots implements
 
 $$
 \mathcal D_d(X)=\operatorname{Tr}(X)\frac{I_d}{d}.
 \tag{1}
 $$
 
-The slots have independent noise. The order controller $C$ has basis $|i\rangle$, $i\in\mathbb Z_N$. Its value $i$ selects the chronological order
+The slots have independent noise. The order controller $`C`$ has basis $`|i\rangle`$, $`i\in\mathbb Z_N`$. Its value $`i`$ selects the chronological order
 
 $$
 i+1,i+2,\ldots,N,1,\ldots,i.
 \tag{2}
 $$
 
-An optional preparation ancilla $Z$ can be correlated or entangled with $C$ and is delivered to the receiver without interacting with the target. The fixed preparation is a density operator $\omega_{CZ}$. For every target input, including one entangled with a reference $R$, the initial state is
+An optional preparation ancilla $`Z`$ can be correlated or entangled with $`C`$ and is delivered to the receiver without interacting with the target. The fixed preparation is a density operator $`\omega_{CZ}`$. For every target input, including one entangled with a reference $`R`$, the initial state is
 
 $$
 \omega_{CZ}\otimes\rho_{RT}.
@@ -29,9 +29,9 @@ $$
 
 Equation (3) is the independence assumption. Independence of the controller marginal from a classical message label would be weaker and does not suffice: input-controller correlations could themselves supply an additional communication resource.
 
-The receiver retains all of $BCZ$ and may perform arbitrary decoding. The encoder acts on the target inputs. The model supplies no message encoding into the controller or preparation ancilla, no target bypass, no additional operations on the target between slots, no access to the slot environments, and no feedback from receiver to sender. The order register is not re-prepared or coupled to an input-dependent system inside an invocation.
+The receiver retains all of $`BCZ`$ and may perform arbitrary decoding. The encoder acts on the target inputs. The model supplies no message encoding into the controller or preparation ancilla, no target bypass, no additional operations on the target between slots, no access to the slot environments, and no feedback from receiver to sender. The order register is not re-prepared or coupled to an input-dependent system inside an invocation.
 
-One effective invocation uses **$N$ raw depolarizing slots**, not one. A block of $m$ effective invocations uses $mN$ raw slots. A rate of $r$ qubits or private bits per effective invocation is $r/N$ per raw slot. The controller has dimension $N$ per invocation. The ancillary preparation is input independent; it does not convey a message or provide sender-receiver entanglement with an encoding register.
+One effective invocation uses **$`N`$ raw depolarizing slots**, not one. A block of $`m`$ effective invocations uses $`mN`$ raw slots. A rate of $`r`$ qubits or private bits per effective invocation is $`r/N`$ per raw slot. The controller has dimension $`N`$ per invocation. The ancillary preparation is input independent; it does not convey a message or provide sender-receiver entanglement with an encoding register.
 
 For ordinary quantum and private capacities, the effective channel is used through tensor powers, with arbitrary encoding over the target inputs and arbitrary joint decoding. Section 5 additionally permits a fixed joint preparation of all controllers and a receiver ancilla across the block. These blocks still consist of disjoint cyclic devices with independent slot noise.
 
@@ -46,7 +46,7 @@ $$
 \tag{4}
 $$
 
-The output channel, with register order $CZB$, is
+The output channel, with register order $`CZB`$, is
 
 $$
 \boxed{
@@ -57,7 +57,7 @@ $$
 \tag{5}
 $$
 
-All equations are linear identities on arbitrary operators $X$, not only on density operators. They consequently remain valid when a reference system is retained.
+All equations are linear identities on arbitrary operators $`X`$, not only on density operators. They consequently remain valid when a reference system is retained.
 
 ### Direct Kraus derivation
 
@@ -69,23 +69,23 @@ K_{a_jb_j}=\frac{|a_j\rangle\langle b_j|}{\sqrt d},
 \tag{6}
 $$
 
-For a fixed tuple of slot indices, abbreviate $K_{a_jb_j}$ by $K_j$. The ordered product for controller value $i$ is
+For a fixed tuple of slot indices, abbreviate $`K_{a_jb_j}`$ by $`K_j`$. The ordered product for controller value $`i`$ is
 
 $$
 L_i=K_i\cdots K_1K_N\cdots K_{i+1},
 \tag{7}
 $$
 
-where the first factor is empty for $i=0$, so $L_0=K_N\cdots K_1$. A Kraus representation of the controlled device is obtained by replacing each tuple of slot Kraus operators with $\sum_i|i\rangle\langle i|_C\otimes L_i$. Therefore its $(i,j)$ control block applies the target map
+where the first factor is empty for $`i=0`$, so $`L_0=K_N\cdots K_1`$. A Kraus representation of the controlled device is obtained by replacing each tuple of slot Kraus operators with $`\sum_i|i\rangle\langle i|_C\otimes L_i`$. Therefore its $`(i,j)`$ control block applies the target map
 
 $$
 \mathcal T_{ij}(X)=\sum_{\{a_\ell,b_\ell\}}L_iXL_j^\dagger.
 \tag{8}
 $$
 
-For $i=j$, this is a composition of completely depolarizing channels and equals $\mathcal D_d(X)$.
+For $`i=j`$, this is a composition of completely depolarizing channels and equals $`\mathcal D_d(X)`$.
 
-For $i\ne j$, cyclic relabeling reduces the calculation to $i=0$ and $j=k$, with $1\le k<N$. Set $a_0=a_N$. In $L_0$, the matrix-unit contractions impose $b_j=a_{j-1}$ for every $j$ except $j=1$. In $L_k$, the only omitted constraint is $j=k+1$. Together the two products impose all $N$ constraints. The cross term is consequently
+For $`i\ne j`$, cyclic relabeling reduces the calculation to $`i=0`$ and $`j=k`$, with $`1\le k<N`$. Set $`a_0=a_N`$. In $`L_0`$, the matrix-unit contractions impose $`b_j=a_{j-1}`$ for every $`j`$ except $`j=1`$. In $`L_k`$, the only omitted constraint is $`j=k+1`$. Together the two products impose all $`N`$ constraints. The cross term is consequently
 
 $$
 d^{-N}|a_N\rangle
@@ -94,7 +94,7 @@ d^{-N}|a_N\rangle
 \tag{9}
 $$
 
-The remaining $N-2$ indices $a_j$ contribute a factor $d^{N-2}$. Summing $a_N$ and $a_k$ gives
+The remaining $`N-2`$ indices $`a_j`$ contribute a factor $`d^{N-2}`$. Summing $`a_N`$ and $`a_k`$ gives
 
 $$
 \mathcal T_{ij}(X)=
@@ -105,7 +105,7 @@ X/d^2,&i\ne j.
 \tag{10}
 $$
 
-For $N=1$ there are no cross terms. Substituting (10) into (8), with the untouched ancillary blocks $\omega_{ij}^Z$, proves (5).
+For $`N=1`$ there are no cross terms. Substituting (10) into (8), with the untouched ancillary blocks $`\omega_{ij}^Z`$, proves (5).
 
 ## 3. Uniform control and lossless binary flags
 
@@ -129,7 +129,7 @@ $$
 \tag{12}
 $$
 
-For $N>1$, define the completely positive, trace-nonincreasing branch maps
+For $`N>1`$, define the completely positive, trace-nonincreasing branch maps
 
 $$
 \begin{aligned}
@@ -152,7 +152,7 @@ $$
 \tag{14}
 $$
 
-Measure the orthogonal subspaces $\Pi_0,\Pi_1$ and retain their label in a binary register $F$. This produces
+Measure the orthogonal subspaces $`\Pi_0,\Pi_1`$ and retain their label in a binary register $`F`$. This produces
 
 $$
 \mathcal C_{N,d}(X)
@@ -161,7 +161,7 @@ $$
 \tag{15}
 $$
 
-Conversely, prepare $\Pi_0$ on flag $0$ and $\Pi_1/(N-1)$ on flag $1$. This reconstructs (14) exactly. Both transformations are channels at the receiver; no branch is discarded. Thus $\mathcal S_+$ and $\mathcal C_{N,d}$ are equivalent for quantum capacity, private capacity, and antidegradability. The compression loses no information about the input. At $N=1$, the channel is $\mathcal D_d$ with a deterministic flag $0$.
+Conversely, prepare $`\Pi_0`$ on flag $`0`$ and $`\Pi_1/(N-1)`$ on flag $`1`$. This reconstructs (14) exactly. Both transformations are channels at the receiver; no branch is discarded. Thus $`\mathcal S_+`$ and $`\mathcal C_{N,d}`$ are equivalent for quantum capacity, private capacity, and antidegradability. The compression loses no information about the input. At $`N=1`$, the channel is $`\mathcal D_d`$ with a deterministic flag $`0`$.
 
 The flag probabilities are input independent:
 
@@ -186,7 +186,7 @@ $$
 \tag{17}
 $$
 
-The second branch is unused when $N=1$. Calling flag $0$ “good” or “successful” refers to its conditional fidelity; capacity of the complete device retains both flags.
+The second branch is unused when $`N=1`$. Calling flag $`0`$ “good” or “successful” refers to its conditional fidelity; capacity of the complete device retains both flags.
 
 ### Normalized Choi convention
 
@@ -199,7 +199,7 @@ $$
 \tag{18}
 $$
 
-For a trace-preserving channel $\mathcal N$, its normalized Choi operator is $J(\mathcal N)=(\operatorname{id}_R\otimes\mathcal N)(\Phi)$; it has trace one and $R$ marginal $I_R/d$. With $I_{RB}$ denoting the identity on a space of dimension $d^2$,
+For a trace-preserving channel $`\mathcal N`$, its normalized Choi operator is $`J(\mathcal N)=(\operatorname{id}_R\otimes\mathcal N)(\Phi)`$; it has trace one and $`R`$ marginal $`I_R/d`$. With $`I_{RB}`$ denoting the identity on a space of dimension $`d^2`$,
 
 $$
 \begin{aligned}
@@ -214,7 +214,7 @@ J_{N,d}
 \tag{19}
 $$
 
-The blocks $\sigma_a$ are subnormalized: $\operatorname{Tr}\sigma_a=p_a$. In particular,
+The blocks $`\sigma_a`$ are subnormalized: $`\operatorname{Tr}\sigma_a=p_a`$. In particular,
 
 $$
 \operatorname{Tr}(\Phi\sigma_0)=\frac1{d^2},
@@ -227,7 +227,7 @@ These two weights drive the exact boundary proof.
 
 ## 4. Uniform control dominates every independent preparation
 
-**Proposition 1.** For every fixed density operator $\omega_{CZ}$, there is a receiver channel $\Lambda_\omega:C\to CZ$ such that
+**Proposition 1.** For every fixed density operator $`\omega_{CZ}`$, there is a receiver channel $`\Lambda_\omega:C\to CZ`$ such that
 
 $$
 \boxed{
@@ -248,7 +248,7 @@ $$
 \tag{22}
 $$
 
-The vectors $|a_i\rangle$ need not be normalized or orthogonal. Define Kraus operators
+The vectors $`|a_i\rangle`$ need not be normalized or orthogonal. Define Kraus operators
 
 $$
 K_s=\sum_{i=0}^{N-1}|i\rangle_C|a_i\rangle_Z\langle i-s|_C,
@@ -256,7 +256,7 @@ K_s=\sum_{i=0}^{N-1}|i\rangle_C|a_i\rangle_Z\langle i-s|_C,
 \tag{23}
 $$
 
-All control indices are modulo $N$. Orthogonality of the output control basis gives
+All control indices are modulo $`N`$. Orthogonality of the output control basis gives
 
 $$
 \sum_sK_s^\dagger K_s
@@ -265,7 +265,7 @@ $$
 \tag{24}
 $$
 
-Thus $\Lambda_\psi(Y)=\sum_sK_sYK_s^\dagger$ is a channel. It satisfies
+Thus $`\Lambda_\psi(Y)=\sum_sK_sYK_s^\dagger`$ is a channel. It satisfies
 
 $$
 \Lambda_\psi(I_C/N)=\Delta_C(|\psi\rangle\langle\psi|),
@@ -274,7 +274,7 @@ $$
 \tag{25}
 $$
 
-The first identity follows by summing the diagonal terms; for the second, each $K_s|+\rangle=|\psi\rangle/\sqrt N$. Equations (12) and (25) prove (21) for a pure preparation. If $\omega=\sum_\ell q_\ell|\psi_\ell\rangle\langle\psi_\ell|$, use the channel $\Lambda_\omega=\sum_\ell q_\ell\Lambda_{\psi_\ell}$. Linearity proves the result. $\square$
+The first identity follows by summing the diagonal terms; for the second, each $`K_s|+\rangle=|\psi\rangle/\sqrt N`$. Equations (12) and (25) prove (21) for a pure preparation. If $`\omega=\sum_\ell q_\ell|\psi_\ell\rangle\langle\psi_\ell|`$, use the channel $`\Lambda_\omega=\sum_\ell q_\ell\Lambda_{\psi_\ell}`$. Linearity proves the result. $`\square`$
 
 The simulation is deterministic and preserves the full target output. It does not send a selected success flag back to the encoder. Since antidegradability is preserved under receiver channels, the antidegradable regime of uniform control applies to every preparation covered by (3).
 
@@ -282,7 +282,7 @@ The simulation is deterministic and preserves the full target output. It does no
 
 Single-use controller dominance does not by itself establish a claim about correlated preparations across uses. The stronger block statement follows from the equality structure in (10).
 
-**Proposition 2.** Fix $m$ disjoint cyclic devices, each with $N$ slots of dimension $d$. Let $\omega_{C^m Z}$ be any joint preparation, independent of $\rho_{RT^m}$. The controls may be entangled with one another and with $Z$. There exists a receiver channel $\Lambda_\omega^{(m)}:C^m\to C^mZ$ for which the complete block channel obeys
+**Proposition 2.** Fix $`m`$ disjoint cyclic devices, each with $`N`$ slots of dimension $`d`$. Let $`\omega_{C^m Z}`$ be any joint preparation, independent of $`\rho_{RT^m}`$. The controls may be entangled with one another and with $`Z`$. There exists a receiver channel $`\Lambda_\omega^{(m)}:C^m\to C^mZ`$ for which the complete block channel obeys
 
 $$
 \boxed{
@@ -293,9 +293,9 @@ $$
 \tag{26}
 $$
 
-This equality holds on arbitrary entangled inputs to the $m$ targets.
+This equality holds on arbitrary entangled inputs to the $`m`$ targets.
 
-**Proof.** Write $\mathbf i,\mathbf j,\mathbf s\in G=(\mathbb Z_N)^m$ and
+**Proof.** Write $`\mathbf i,\mathbf j,\mathbf s\in G=(\mathbb Z_N)^m`$ and
 
 $$
 \mathcal T_{\mathbf i,\mathbf j}
@@ -303,7 +303,7 @@ $$
 \tag{27}
 $$
 
-The tensor product in (27) is a tensor product of linear maps, so it acts on any operator on $T^m$, including entangled states. Equation (10) implies
+The tensor product in (27) is a tensor product of linear maps, so it acts on any operator on $`T^m`$, including entangled states. Equation (10) implies
 
 $$
 \mathcal T_{\mathbf i-\mathbf s,\mathbf j-\mathbf s}
@@ -331,7 +331,7 @@ K_{\mathbf s}
 \tag{30}
 $$
 
-The same calculation as (24) gives $\sum_{\mathbf s}K_{\mathbf s}^\dagger K_{\mathbf s}=I_{C^m}$. Meanwhile, the product-uniform output is
+The same calculation as (24) gives $`\sum_{\mathbf s}K_{\mathbf s}^\dagger K_{\mathbf s}=I_{C^m}`$. Meanwhile, the product-uniform output is
 
 $$
 \mathcal S_+^{\otimes m}(X)
@@ -341,7 +341,7 @@ $$
 \tag{31}
 $$
 
-After applying the Kraus map (30), set $\mathbf i=\mathbf k+\mathbf s$ and $\mathbf j=\mathbf l+\mathbf s$. Each of the $N^m$ values of $\mathbf s$ contributes the same target operator by (28). The result is
+After applying the Kraus map (30), set $`\mathbf i=\mathbf k+\mathbf s`$ and $`\mathbf j=\mathbf l+\mathbf s`$. Each of the $`N^m`$ values of $`\mathbf s`$ contributes the same target operator by (28). The result is
 
 $$
 \sum_{\mathbf i,\mathbf j}
@@ -351,17 +351,17 @@ $$
 \tag{32}
 $$
 
-which is exactly the output for the joint preparation (29). Mixed preparations follow by convexity as in Proposition 1. $\square$
+which is exactly the output for the joint preparation (29). Mixed preparations follow by convexity as in Proposition 1. $`\square`$
 
-The equivalent binary channels $\mathcal C_{N,d}^{\otimes m}$ suffice as well: first decompress each binary flag using Section 3, then apply $\Lambda_\omega^{(m)}$.
+The equivalent binary channels $`\mathcal C_{N,d}^{\otimes m}`$ suffice as well: first decompress each binary flag using Section 3, then apply $`\Lambda_\omega^{(m)}`$.
 
 ### Operational scope
 
-If $\mathcal C_{N,d}$ is antidegradable, then every tensor power is antidegradable. Receiver postprocessing preserves this property. Equation (26) therefore rules out positive unassisted quantum or private communication rates even if, at every block length, a different correlated controller preparation and retained receiver ancilla are chosen. Arbitrary target encoding and joint decoding are already included.
+If $`\mathcal C_{N,d}`$ is antidegradable, then every tensor power is antidegradable. Receiver postprocessing preserves this property. Equation (26) therefore rules out positive unassisted quantum or private communication rates even if, at every block length, a different correlated controller preparation and retained receiver ancilla are chosen. Arbitrary target encoding and joint decoding are already included.
 
 This statement does not cover a global superposition of permutations that interleaves slots belonging to different devices, correlations among slot environments, feedback-dependent preparations, input-controller interactions, or a joint input state that violates (3). These modify the channel or communication resource.
 
-The block proof also applies whenever each local cross map is multiplied by a fixed visibility $v$: the map then depends on whether $i_\ell=j_\ell$, and (28) remains true. The specific unobserved-dephasing model and its threshold are treated in [unobserved_dephasing.md](unobserved_dephasing.md).
+The block proof also applies whenever each local cross map is multiplied by a fixed visibility $`v`$: the map then depends on whether $`i_\ell=j_\ell`$, and (28) remains true. The specific unobserved-dephasing model and its threshold are treated in [unobserved_dephasing.md](unobserved_dephasing.md).
 
 ## Reference
 

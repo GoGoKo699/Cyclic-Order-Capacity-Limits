@@ -184,7 +184,7 @@ The allocation is **12 background/preliminaries milestones and 18 narrative/inno
 
 **Central question:** Which coherent-order communication resource is actually being studied?
 
-**Understanding target:** Specify the $N$ cyclic permutations of $N$ independent depolarizing slots on a target of dimension $d$. Explain the factorization of the controller and retained preparation ancilla from the complete encoded target/reference input, and charge $N$ raw calls per invocation.
+**Understanding target:** Specify the $`N`$ cyclic permutations of $`N`$ independent depolarizing slots on a target of dimension $`d`$. Explain the factorization of the controller and retained preparation ancilla from the complete encoded target/reference input, and charge $`N`$ raw calls per invocation.
 
 **Dependencies and story role:** M02, M06, M12. Begin the project from its physical architecture and admissible resources.
 
@@ -198,7 +198,7 @@ The allocation is **12 background/preliminaries milestones and 18 narrative/inno
 
 **Central question:** How does coherence between orders retain input dependence when each definite order depolarizes completely?
 
-**Understanding target:** Follow the matrix-unit Kraus contractions that give the depolarizing map in a diagonal control block and $X/d^2$ in every off-diagonal cyclic block. Explain why the resulting identity applies to arbitrary target operators and retained references.
+**Understanding target:** Follow the matrix-unit Kraus contractions that give the depolarizing map in a diagonal control block and $`X/d^2`$ in every off-diagonal cyclic block. Explain why the resulting identity applies to arbitrary target operators and retained references.
 
 **Dependencies and story role:** M02–M03, M13. Identify the mechanism before compressing its outputs.
 
@@ -210,9 +210,9 @@ The allocation is **12 background/preliminaries milestones and 18 narrative/inno
 
 **Phase:** Narrative/innovation.
 
-**Central question:** Why can an output controller of dimension $N$ be replaced by two flags without losing useful information?
+**Central question:** Why can an output controller of dimension $`N`$ be replaced by two flags without losing useful information?
 
-**Understanding target:** Construct both the flag measurement and its receiver-side reconstruction for uniform control. Read the branch probabilities from subnormalized Choi traces, and identify the good branch's Bell weight $1/d^2$ and the bad branch's zero Bell weight.
+**Understanding target:** Construct both the flag measurement and its receiver-side reconstruction for uniform control. Read the branch probabilities from subnormalized Choi traces, and identify the good branch's Bell weight $`1/d^2`$ and the bad branch's zero Bell weight.
 
 **Dependencies and story role:** M03–M04, M11, M14. Reduce the exact device to the fixed output structure used by the proofs.
 
@@ -254,7 +254,7 @@ The allocation is **12 background/preliminaries milestones and 18 narrative/inno
 
 **Central question:** How much Bell overlap can one receiver have if the other receiver has none?
 
-**Understanding target:** Derive the overlap identities for the two Bell projectors and distinguish the unrestricted symmetric overlap bound from the constrained bound $1-d^{-2}$. Explain why the latter is at least the former for every $d\ge2$.
+**Understanding target:** Derive the overlap identities for the two Bell projectors and distinguish the unrestricted symmetric overlap bound from the constrained bound $`1-d^{-2}`$. Explain why the latter is at least the former for every $`d\ge2`$.
 
 **Dependencies and story role:** M10–M11, M15. Isolate the geometric ingredient needed for a witness covering every allocation of flags.
 
@@ -268,11 +268,11 @@ The allocation is **12 background/preliminaries milestones and 18 narrative/inno
 
 **Central question:** How can a necessary bound cover all possible extensions rather than one chosen construction?
 
-**Understanding target:** Dephase the two output flags without altering their marginals, use positivity to enforce the zero-Bell support of the bad sector, and combine the sector bounds. Obtain the inequality $1/d^2\le(1-d^{-2})p_0$ without assuming the eventual sufficiency construction.
+**Understanding target:** Dephase the two output flags without altering their marginals, use positivity to enforce the zero-Bell support of the bad sector, and combine the sector bounds. Obtain the inequality $`1/d^2\le(1-d^{-2})p_0`$ without assuming the eventual sufficiency construction.
 
 **Dependencies and story role:** M10, M15, M18. Turn the Bell geometry into a universal obstruction.
 
-**Conceptual connection:** Substituting the actual good-flag probability yields the necessary ideal boundary $N\le(d^2-1)^2$.
+**Conceptual connection:** Substituting the actual good-flag probability yields the necessary ideal boundary $`N\le(d^2-1)^2`$.
 
 **Source pointers:** Wilde §4.4 for positive-operator foundations; [ideal boundary, §4](../science/ideal_boundary.md#4-necessity-a-witness-for-every-flagged-extension).
 
@@ -282,7 +282,7 @@ The allocation is **12 background/preliminaries milestones and 18 narrative/inno
 
 **Central question:** What construction saturates the ideal witness with the correct quantum marginals?
 
-**Understanding target:** Explain the cross-flag state built from a compressed Bell projector and the both-bad state built from the common kernel. Check positivity, normalization, swap symmetry, and both flagged marginals when their weights are assembled at $N=(d^2-1)^2$.
+**Understanding target:** Explain the cross-flag state built from a compressed Bell projector and the both-bad state built from the common kernel. Check positivity, normalization, swap symmetry, and both flagged marginals when their weights are assembled at $`N=(d^2-1)^2`$.
 
 **Dependencies and story role:** M10–M11, M18–M19. Supply attainability to complement the necessary witness.
 
@@ -296,7 +296,7 @@ The allocation is **12 background/preliminaries milestones and 18 narrative/inno
 
 **Central question:** Why does the endpoint construction establish every smaller integer order count?
 
-**Understanding target:** Use the affine dependence on $1/N$ to interpolate between the one-slot channel and the endpoint extension. Combine this positive construction with the universal witness to state the exact antidegradability classification of uniform control.
+**Understanding target:** Use the affine dependence on $`1/N`$ to interpolate between the one-slot channel and the endpoint extension. Combine this positive construction with the universal witness to state the exact antidegradability classification of uniform control.
 
 **Dependencies and story role:** M09, M15, M19–M20. Join the ideal proof's necessary and sufficient directions.
 
@@ -310,7 +310,7 @@ The allocation is **12 background/preliminaries milestones and 18 narrative/inno
 
 **Central question:** What does the complete-channel argument establish beyond testing the conditional branches separately?
 
-**Understanding target:** Compare the sufficient bound $(d+1)^2$ from separate branches with the exact boundary $(d^2-1)^2$. Explain their coincidence for qubits and their separation for larger dimensions, together with the endpoint's accepted fidelity, success probability, and raw-slot cost.
+**Understanding target:** Compare the sufficient bound $`(d+1)^2`$ from separate branches with the exact boundary $`(d^2-1)^2`$. Explain their coincidence for qubits and their separation for larger dimensions, together with the endpoint's accepted fidelity, success probability, and raw-slot cost.
 
 **Dependencies and story role:** M05, M12, M15, M21. Interpret the ideal theorem quantitatively rather than only algebraically.
 
@@ -324,7 +324,7 @@ The allocation is **12 background/preliminaries milestones and 18 narrative/inno
 
 **Central question:** Which loss of order coherence is strong enough to support the noise theorem?
 
-**Understanding target:** Specify the channel $\mathcal D_v=v\,\operatorname{id}+(1-v)\Delta_C$, its location, and the inaccessibility of its environment. Explain the example in which a retained phase label permits correction despite a low-visibility reduced controller state.
+**Understanding target:** Specify the channel $`\mathcal D_v=v\,\operatorname{id}+(1-v)\Delta_C`$, its location, and the inaccessibility of its environment. Explain the example in which a retained phase label permits correction despite a low-visibility reduced controller state.
 
 **Dependencies and story role:** M06, M12–M14, M17. Introduce the noisy model while keeping operationally different kinds of lost coherence separate.
 
@@ -338,7 +338,7 @@ The allocation is **12 background/preliminaries milestones and 18 narrative/inno
 
 **Central question:** How can increasing the order-register dimension yield a well-defined limiting channel?
 
-**Understanding target:** Compress the noisy uniform-controller output to the same two flags for every $N$. Derive its affine relation to the limiting channel and the one-slot flagged depolarizer, and interpret the diamond-norm bound $2/N$ without postulating a finite-cost infinite-order device.
+**Understanding target:** Compress the noisy uniform-controller output to the same two flags for every $`N`$. Derive its affine relation to the limiting channel and the one-slot flagged depolarizer, and interpret the diamond-norm bound $`2/N`$ without postulating a finite-cost infinite-order device.
 
 **Dependencies and story role:** M03–M04, M15, M23. Set up a limit that can prove exact statements about finite devices.
 
@@ -352,7 +352,7 @@ The allocation is **12 background/preliminaries milestones and 18 narrative/inno
 
 **Central question:** Why does a pure successful marginal force a residual-positivity test?
 
-**Understanding target:** Use rank-one marginal factorization to exclude simultaneous good outputs and fix the two cross sectors after covariance averaging. Subtract their contribution from the bad marginal and derive $v\le d^2/(d^2+1)$ from the residual's Bell-direction eigenvalue.
+**Understanding target:** Use rank-one marginal factorization to exclude simultaneous good outputs and fix the two cross sectors after covariance averaging. Subtract their contribution from the bad marginal and derive $`v\le d^2/(d^2+1)`$ from the residual's Bell-direction eigenvalue.
 
 **Dependencies and story role:** M01, M10–M11, M20, M24. Establish the necessary noisy limiting threshold.
 
@@ -384,7 +384,7 @@ The allocation is **12 background/preliminaries milestones and 18 narrative/inno
 
 **Dependencies and story role:** M09–M10, M16–M17, M24, M26. Transfer the limiting obstruction to the full noisy communication model.
 
-**Conceptual connection:** Every finite $N$ is antidegradable below the visibility ceiling. Above it, closedness and convergence imply eventual non-antidegradability, not a positive-capacity theorem or a full finite-$N$ boundary.
+**Conceptual connection:** Every finite $`N`$ is antidegradable below the visibility ceiling. Above it, closedness and convergence imply eventual non-antidegradability, not a positive-capacity theorem or a full finite-$`N`$ boundary.
 
 **Source pointers:** Wilde §§4.4, 13.5 for channels and antidegradability; [unobserved dephasing, §§5–6](../science/unobserved_dephasing.md#5-every-finite-number-of-orders-below-the-same-visibility).
 
@@ -394,11 +394,11 @@ The allocation is **12 background/preliminaries milestones and 18 narrative/inno
 
 **Central question:** What happens when the accepted branch improves at a fixed nonzero dephasing level?
 
-**Understanding target:** Derive the acceptance probability and both accepted fidelities, and evaluate the qubit example at $v=4/5$ and $N=1000$. Explain why their fixed-dimension limit requires $v>0$, and why a nonzero limiting acceptance probability does not give a constant accepted yield per raw slot.
+**Understanding target:** Derive the acceptance probability and both accepted fidelities, and evaluate the qubit example at $`v=4/5`$ and $`N=1000`$. Explain why their fixed-dimension limit requires $`v>0`$, and why a nonzero limiting acceptance probability does not give a constant accepted yield per raw slot.
 
 **Dependencies and story role:** M05, M12, M24, M27. Connect the exact proof to a concrete performance comparison.
 
-**Conceptual connection:** High accepted entanglement fidelity and $Q=P=0$ describe different aspects of the same complete channel, with all unsuccessful invocations counted.
+**Conceptual connection:** High accepted entanglement fidelity and $`Q=P=0`$ describe different aspects of the same complete channel, with all unsuccessful invocations counted.
 
 **Source pointers:** Wilde §§9.5.2, 23.1, 24.1; [unobserved dephasing, §8](../science/unobserved_dephasing.md#8-high-accepted-fidelity-at-nonvanishing-success-probability) and [communication consequences, §§3 and 5](../science/operational_consequences.md#3-fixed-dimension-accuracy-with-zero-capacity).
 
