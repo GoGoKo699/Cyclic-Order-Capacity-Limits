@@ -8,19 +8,19 @@ An accepted output can approach perfect quantum transmission while the complete 
 
 Let $`N`$ independent completely depolarizing channels act on a $`d`$-dimensional target, with $`d\ge2`$, in a coherent superposition of their $`N`$ cyclic orders. The receiver retains the target and the complete controller output. For uniform ideal control,
 
-$$
+```math
 \boxed{\mathcal C_{N,d}\text{ is antidegradable}
 \quad\Longleftrightarrow\quad N\le(d^2-1)^2.}
-$$
+```
 
 Every fixed controller preparation independent of the complete encoded input is simulated by receiver postprocessing of uniform control. This includes retained preparation ancillas and controller correlations across blocks of disjoint devices. Consequently, every such preparation has zero unassisted quantum and private capacity throughout the stated region, even with arbitrary payload block coding.
 
 Under actual unobserved order-register dephasing $`\mathcal D_v=v\,\mathrm{id}+(1-v)\Delta_C`$,
 
-$$
+```math
 \boxed{v\le\frac{d^2}{d^2+1}
 \quad\Longrightarrow\quad Q=P=0\text{ for every finite }N.}
-$$
+```
 
 For a qubit target with $`v=4/5`$ and $`N=1000`$, the accepted outcome occurs with probability **0.2008** and has entanglement fidelity **0.996265**, while the complete device has zero unassisted quantum and private capacities. The inaccessible noise environment is essential; a reduced-register visibility alone is not the noise assumption.
 

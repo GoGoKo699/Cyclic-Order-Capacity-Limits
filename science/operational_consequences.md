@@ -12,15 +12,15 @@ An antidegradable channel admits a channel from its complementary environment to
 
 The private classical capacity $`P`$ uses the standard wiretap convention: the eavesdropper holds the full complementary output. For an ensemble labelled by a classical variable $`X`$, data processing under an antidegrading map gives
 
-$$
+```math
 I(X;B)\le I(X;E).
-$$
+```
 
 The same inequality holds for every block because tensor products and receiver postprocessings preserve antidegradability. The regularized private-information expression therefore has no positive rate. Thus
 
-$$
+```math
 Q=P=0
-$$
+```
 
 throughout each proved antidegradable regime. The complementary environment includes purifications of mixed preparation and inaccessible control noise. A different wiretap model in which some noise is trusted and hidden from the eavesdropper requires its own privacy analysis.
 
@@ -30,17 +30,17 @@ The [controller simulation](channel_model.md) also covers arbitrary fixed contro
 
 For ideal uniform control, the complete cyclic-order channel is antidegradable exactly when
 
-$$
+```math
 N\le N_*=(d^2-1)^2.
-$$
+```
 
 All allowed controller preparations inherit zero quantum and private capacity in that region. Above it, the uniform channel is not antidegradable. Its capacity is not determined by this theorem.
 
 A simpler sufficient argument treats each flag branch separately. The accepted branch has normalized Choi Bell overlap
 
-$$
+```math
 F_0=\frac{N}{N+d^2-1}.
-$$
+```
 
 The standard two-copy shareability criterion for isotropic states gives antidegradability of this branch when $`F_0\le(d+1)/(2d)`$, equivalently $`N\le(d+1)^2`$. The other branch has zero Bell overlap and is antidegradable. Mixing the two independently antidegradable branches, with the flag retained, gives the simpler sufficient bound. The complete-channel proof permits joint allocations between the two output flags and reaches a substantially larger region.
 
@@ -56,10 +56,10 @@ The ideal qubit endpoint is already reached by the simpler argument. The dimensi
 
 At the exact endpoint,
 
-$$
+```math
 p_0=\frac{1}{d^2-1},\qquad
 F_0=1-\frac{1}{d^2}.
-$$
+```
 
 The accepted entanglement fidelity approaches one as the target dimension grows, while the complete device still has zero unassisted capacities. In this example, acceptance simultaneously becomes rare and the number of underlying channel calls grows. These costs are part of the statement.
 
@@ -69,9 +69,9 @@ The noise model is the actual channel $`\mathcal D_v=v\,\mathrm{id}+(1-v)\Delta_
 
 For
 
-$$
+```math
 v\le\frac{d^2}{d^2+1},
-$$
+```
 
 the [noise theorem](unobserved_dephasing.md) establishes antidegradability for every finite $`N`$. For any fixed $`v>0`$, the accepted branch nevertheless approaches the identity as $`N`$ grows, with success probability approaching $`v/d^2`$.
 
@@ -98,9 +98,9 @@ The receiver can retain the accepted outputs and report their locations to the s
 
 The unsuccessful branch is a quantum channel,
 
-$$
+```math
 \mathcal E_1(\rho)=\frac{dI-\rho}{d^2-1}
-$$
+```
 
 under ideal control. It retains input-dependent quantum output and is not a literal erasure symbol. An erasure-channel analogy explains why good heralded performance need not imply a positive unassisted rate, but it does not supply this exact antidegradability boundary.
 

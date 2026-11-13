@@ -45,11 +45,11 @@ The receiver's complete output includes its target, controller or equivalent fla
 
 Wilde's Definition 4.4.4 uses the unnormalized vector $`|\Gamma\rangle=\sum_x|x,x\rangle`$. This repository uses
 
-$$
+```math
 \Phi=\frac{|\Gamma\rangle\langle\Gamma|}{d},
 \qquad
 J(\mathcal N)=(\mathrm{id}_R\otimes\mathcal N)(\Phi).
-$$
+```
 
 Thus the repository's $`J`$ is the Choi operator in that definition divided by the input dimension $`d`$. For a trace-preserving channel, $`\mathrm{Tr}J=1`$ and its reference marginal is $`I_R/d`$. In a flagged channel, the individual Choi blocks are subnormalized: their traces are branch probabilities. Normalizing a block changes the question to a conditional channel.
 
@@ -61,9 +61,9 @@ The source's optimized one-use information quantities in Sections 13.5–13.6 mu
 
 Here $`F_e`$ is entanglement fidelity for the maximally mixed target input, evaluated by retaining its maximally entangled purification. For a conditional channel $`\mathcal E_0`$,
 
-$$
+```math
 F_e=\mathrm{Tr}\!\left[\Phi J(\mathcal E_0)\right].
-$$
+```
 
 This differs from fidelity of a single pure target state. Both conventions appear in the worked example below.
 
@@ -87,11 +87,11 @@ Antidegradability means that a channel's environment can simulate its complete r
 
 The four joint flag sectors allow the two hypothetical receivers to have different outcomes. The bad marginal's zero Bell overlap constrains the cross sectors. Bell-projector geometry then gives a necessary inequality; an explicit positive extension attains it. Together these yield
 
-$$
+```math
 \mathcal C_{N,d}\text{ is antidegradable}
 \quad\Longleftrightarrow\quad
 N\le(d^2-1)^2.
-$$
+```
 
 The equivalence concerns uniform control. Other allowed preparations inherit the zero-capacity region by receiver simulation. Above the boundary, this proof establishes non-antidegradability of the uniform channel, without determining its capacity.
 
@@ -99,19 +99,19 @@ The equivalence concerns uniform control. Other allowed preparations inherit the
 
 The [dephasing model](../science/unobserved_dephasing.md) applies the physical channel
 
-$$
+```math
 \mathcal D_v=v\mathrm{id}_C+(1-v)\Delta_C
-$$
+```
 
 to the prepared order register, with its environment or random phase label unavailable to the receiver. A reduced controller state alone does not determine whether this physical noise has occurred: a retained phase record can permit recovery. The proof therefore keeps the channel, its placement, and the unavailable record explicit.
 
 After exact flag compression, the output dimension is fixed. The limiting channel has a pure successful Choi block. That purity forbids both receivers from occupying the successful sector simultaneously. The cross sectors are fixed, and the remaining bad marginal must be positive. An explicit separable extension proves that the positivity condition is sufficient here. The result is
 
-$$
+```math
 \mathcal N_{\infty,v}\text{ is antidegradable}
 \quad\Longleftrightarrow\quad
 v\le\frac{d^2}{d^2+1}.
-$$
+```
 
 Every finite channel is a convex mixture of this limit and a completely depolarizing channel with a fixed flag. Consequently the same range of $`v`$ guarantees antidegradability at every finite $`N`$. The proof does not exchange a capacity limit with an infinite physical device, and it does not claim the complete finite-$`N`$ noisy boundary.
 
@@ -127,12 +127,12 @@ Take a qubit target, $`d=2`$, with $`N=1000`$ cyclic orders and physical dephasi
 
 For flag $`0`$, the probability and normalized target channel are
 
-$$
+```math
 p_0=\frac{4+(4/5)999}{4000}=\frac{251}{1250},
 \qquad
 \mathcal E_0(\rho)=\frac{999}{1004}\rho
   +\frac{5}{1004}\frac{I_2}{2}.
-$$
+```
 
 For any pure target input, the accepted fidelity is $`2003/2008`$, about $`99.751\%`$. To test entanglement preservation, prepare a Bell pair and send one half; conditioned on flag $`0`$, its overlap with the original Bell state is $`4001/4016`$, about $`99.626\%`$. These values follow from the same conditional channel with different input tests. Flag $`0`$ occurs with probability $`20.08\%`$.
 
