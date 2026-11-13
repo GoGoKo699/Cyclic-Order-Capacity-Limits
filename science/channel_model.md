@@ -9,7 +9,7 @@ The cyclic channel formula and its uniform-control flag decomposition originate 
 Let $`d\ge 2`$ and $`N\ge 1`$ be integers. The input target $`T`$ and output target $`B`$ have dimension $`d`$. Each of the $`N`$ physical slots implements
 
 $$
-\mathcal D_d(X)=\operatorname{Tr}(X)\frac{I_d}{d}.
+\mathcal D_d(X)=\mathrm{Tr}(X)\frac{I_d}{d}.
 \tag{1}
 $$
 
@@ -51,7 +51,7 @@ The output channel, with register order $`CZB`$, is
 $$
 \boxed{
 \mathcal S_\omega(X)
-=\Delta_C(\omega)\otimes\operatorname{Tr}(X)\frac{I_d}{d}
+=\Delta_C(\omega)\otimes\mathrm{Tr}(X)\frac{I_d}{d}
 +\bigl[\omega-\Delta_C(\omega)\bigr]\otimes\frac{X}{d^2}.
 }
 \tag{5}
@@ -124,7 +124,7 @@ Without a preparation ancilla, uniform coherent control gives
 
 $$
 \mathcal S_+(X)
-=\frac{I_C}{N}\otimes\operatorname{Tr}(X)\frac{I_d}{d}
+=\frac{I_C}{N}\otimes\mathrm{Tr}(X)\frac{I_d}{d}
 +\left(\Pi_0-\frac{I_C}{N}\right)\otimes\frac{X}{d^2}.
 \tag{12}
 $$
@@ -134,10 +134,10 @@ For $`N>1`$, define the completely positive, trace-nonincreasing branch maps
 $$
 \begin{aligned}
 \mathcal A_0(X)
-&=\frac{\operatorname{Tr}(X)I_d}{Nd}
+&=\frac{\mathrm{Tr}(X)I_d}{Nd}
   +\frac{N-1}{Nd^2}X,\\
 \mathcal A_1(X)
-&=\frac{N-1}{Nd}\operatorname{Tr}(X)I_d
+&=\frac{N-1}{Nd}\mathrm{Tr}(X)I_d
   -\frac{N-1}{Nd^2}X.
 \end{aligned}
 \tag{13}
@@ -177,9 +177,9 @@ The normalized conditional channels are
 $$
 \begin{aligned}
 \mathcal E_0(X)
-&=\frac{(N-1)X+d\,\operatorname{Tr}(X)I_d}{N+d^2-1},\\
+&=\frac{(N-1)X+d\,\mathrm{Tr}(X)I_d}{N+d^2-1},\\
 \mathcal E_1(X)
-&=\frac{d\,\operatorname{Tr}(X)I_d-X}{d^2-1},
+&=\frac{d\,\mathrm{Tr}(X)I_d-X}{d^2-1},
 \end{aligned}
 \qquad
 \mathcal C_{N,d}(X)=\sum_{a=0}^1p_a|a\rangle\langle a|\otimes\mathcal E_a(X).
@@ -199,7 +199,7 @@ $$
 \tag{18}
 $$
 
-For a trace-preserving channel $`\mathcal N`$, its normalized Choi operator is $`J(\mathcal N)=(\operatorname{id}_R\otimes\mathcal N)(\Phi)`$; it has trace one and $`R`$ marginal $`I_R/d`$. With $`I_{RB}`$ denoting the identity on a space of dimension $`d^2`$,
+For a trace-preserving channel $`\mathcal N`$, its normalized Choi operator is $`J(\mathcal N)=(\mathrm{id}_R\otimes\mathcal N)(\Phi)`$; it has trace one and $`R`$ marginal $`I_R/d`$. With $`I_{RB}`$ denoting the identity on a space of dimension $`d^2`$,
 
 $$
 \begin{aligned}
@@ -214,12 +214,12 @@ J_{N,d}
 \tag{19}
 $$
 
-The blocks $`\sigma_a`$ are subnormalized: $`\operatorname{Tr}\sigma_a=p_a`$. In particular,
+The blocks $`\sigma_a`$ are subnormalized: $`\mathrm{Tr}\sigma_a=p_a`$. In particular,
 
 $$
-\operatorname{Tr}(\Phi\sigma_0)=\frac1{d^2},
+\mathrm{Tr}(\Phi\sigma_0)=\frac1{d^2},
 \qquad
-\operatorname{Tr}(\Phi\sigma_1)=0.
+\mathrm{Tr}(\Phi\sigma_1)=0.
 \tag{20}
 $$
 
@@ -232,7 +232,7 @@ These two weights drive the exact boundary proof.
 $$
 \boxed{
 \mathcal S_\omega
-=(\Lambda_\omega\otimes\operatorname{id}_B)\circ\mathcal S_+.
+=(\Lambda_\omega\otimes\mathrm{id}_B)\circ\mathcal S_+.
 }
 \tag{21}
 $$
@@ -287,7 +287,7 @@ Single-use controller dominance does not by itself establish a claim about corre
 $$
 \boxed{
 \mathcal S_\omega^{(m)}
-=\bigl(\Lambda_\omega^{(m)}\otimes\operatorname{id}_{B^m}\bigr)
+=\bigl(\Lambda_\omega^{(m)}\otimes\mathrm{id}_{B^m}\bigr)
   \circ\mathcal S_+^{\otimes m}.
 }
 \tag{26}

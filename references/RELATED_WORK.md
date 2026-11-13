@@ -26,7 +26,7 @@ Perfect transmission on a heralded branch can coexist with zero unassisted capac
 
 ## Isotropic compatibility and the Bell-projector geometry
 
-[Johnson and Viola (2013)](https://doi.org/10.1103/PhysRevA.88.032323) give necessary and sufficient isotropic joinability conditions. Their Corollary III.4, Eq. (23), determines the two-marginal region. In normalized Bell fractions $`F_i=\operatorname{Tr}(\Phi\rho_i)`$, its boundary with $`F_2=0`$ is
+[Johnson and Viola (2013)](https://doi.org/10.1103/PhysRevA.88.032323) give necessary and sufficient isotropic joinability conditions. Their Corollary III.4, Eq. (23), determines the two-marginal region. In normalized Bell fractions $`F_i=\mathrm{Tr}(\Phi\rho_i)`$, its boundary with $`F_2=0`$ is
 
 ```math
 0\le F_1\le 1-d^{-2}.

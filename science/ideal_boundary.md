@@ -40,13 +40,13 @@ $$
 The label $`0`$ denotes the good branch. Its probability and unnormalized Bell weight are
 
 $$
-p_0=\operatorname{Tr}\sigma_0=\frac{N+d^2-1}{Nd^2},
+p_0=\mathrm{Tr}\sigma_0=\frac{N+d^2-1}{Nd^2},
 \qquad
-\operatorname{Tr}(\Phi\sigma_0)=\frac1{d^2}.
+\mathrm{Tr}(\Phi\sigma_0)=\frac1{d^2}.
 \tag{4}
 $$
 
-The bad branch obeys $`\operatorname{Tr}(\Phi\sigma_1)=0`$. The physical channel, compression maps, preparation assumptions, and $`N`$-slot cost are derived in [channel_model.md](channel_model.md).
+The bad branch obeys $`\mathrm{Tr}(\Phi\sigma_1)=0`$. The physical channel, compression maps, preparation assumptions, and $`N`$-slot cost are derived in [channel_model.md](channel_model.md).
 
 **Theorem 1.** The uniform-control channel $`\mathcal C_{N,d}`$ is antidegradable if and only if (1) holds. In this region its unassisted quantum capacity $`Q`$ and private classical capacity $`P`$ are zero.
 
@@ -61,7 +61,7 @@ A channel $`\mathcal N:T\to O`$ is antidegradable if there is a channel $`\mathc
 The equivalent Choi criterion [2] is the existence of a density operator $`W_{RO_1O_2}`$ satisfying
 
 $$
-\operatorname{Tr}_{O_2}W=J(\mathcal N),
+\mathrm{Tr}_{O_2}W=J(\mathcal N),
 \qquad
 \mathsf S_{12}W\mathsf S_{12}=W,
 \tag{5}
@@ -115,7 +115,7 @@ Let $`Q_2=I-P_2`$. The positive operator $`Q_2P_1Q_2`$ satisfies
 $$
 (Q_2P_1Q_2)^2=t\,Q_2P_1Q_2,
 \qquad
-\operatorname{Tr}(Q_2P_1Q_2)=dt.
+\mathrm{Tr}(Q_2P_1Q_2)=dt.
 \tag{9}
 $$
 
@@ -144,22 +144,22 @@ where every $`W_{ab}`$ is a positive, subnormalized operator on $`RB_1B_2`$. If 
 $$
 W_{ba}=VW_{ab}V,
 \qquad
-\sum_b\operatorname{Tr}_{B_2}W_{ab}=\sigma_a.
+\sum_b\mathrm{Tr}_{B_2}W_{ab}=\sigma_a.
 \tag{12}
 $$
 
 The second bad marginal has zero Bell weight. Therefore
 
 $$
-0=\operatorname{Tr}\!\left[P_2(W_{01}+W_{11})\right].
+0=\mathrm{Tr}\!\left[P_2(W_{01}+W_{11})\right].
 \tag{13}
 $$
 
-Both terms are nonnegative. For a positive operator $`X`$ and projector $`P`$, $`\operatorname{Tr}(PX)=0`$ implies $`PX=XP=0`$. It follows that $`W_{01}=Q_2W_{01}Q_2`$, and (10) yields
+Both terms are nonnegative. For a positive operator $`X`$ and projector $`P`$, $`\mathrm{Tr}(PX)=0`$ implies $`PX=XP=0`$. It follows that $`W_{01}=Q_2W_{01}Q_2`$, and (10) yields
 
 $$
-\operatorname{Tr}(P_1W_{01})
-\le t\,\operatorname{Tr}W_{01}.
+\mathrm{Tr}(P_1W_{01})
+\le t\,\mathrm{Tr}W_{01}.
 \tag{14}
 $$
 
@@ -167,9 +167,9 @@ The block $`W_{00}`$ is invariant under $`V`$, so (8) gives
 
 $$
 \begin{aligned}
-2\operatorname{Tr}(P_1W_{00})
-&=\operatorname{Tr}[(P_1+P_2)W_{00}]\\
-&\le \left(1+\frac1d\right)\operatorname{Tr}W_{00}.
+2\mathrm{Tr}(P_1W_{00})
+&=\mathrm{Tr}[(P_1+P_2)W_{00}]\\
+&\le \left(1+\frac1d\right)\mathrm{Tr}W_{00}.
 \end{aligned}
 \tag{15}
 $$
@@ -186,8 +186,8 @@ Combining (14)–(16), and using the first good marginal, gives the necessary in
 $$
 \begin{aligned}
 \frac1{d^2}
-&=\operatorname{Tr}\!\left[P_1(W_{00}+W_{01})\right]\\
-&\le t\left(\operatorname{Tr}W_{00}+\operatorname{Tr}W_{01}\right)\\
+&=\mathrm{Tr}\!\left[P_1(W_{00}+W_{01})\right]\\
+&\le t\left(\mathrm{Tr}W_{00}+\mathrm{Tr}W_{01}\right)\\
 &=t p_0.
 \end{aligned}
 \tag{17}
@@ -230,14 +230,14 @@ $$
 Equation (9) proves positivity and normalization. Its Bell weights are
 
 $$
-\operatorname{Tr}(P_1S)=t,
+\mathrm{Tr}(P_1S)=t,
 \qquad
-\operatorname{Tr}(P_2S)=0.
+\mathrm{Tr}(P_2S)=0.
 \tag{21}
 $$
 
 For example, the first equality follows from
-$`\operatorname{Tr}(P_1Q_2P_1Q_2)=dt^2`$.
+$`\mathrm{Tr}(P_1Q_2P_1Q_2)=dt^2`$.
 
 Every $`P_i`$ is invariant under $`U_R^*\otimes U_{B_1}\otimes U_{B_2}`$. The same holds for $`S`$. Its pair marginals are therefore isotropic. Define the normalized isotropic state with Bell fraction $`f`$ by
 
@@ -249,28 +249,28 @@ $$
 Covariance and (21) determine the marginals exactly:
 
 $$
-\operatorname{Tr}_{B_2}S=\tau_t,
+\mathrm{Tr}_{B_2}S=\tau_t,
 \qquad
-\operatorname{Tr}_{B_1}S=\tau_0.
+\mathrm{Tr}_{B_1}S=\tau_0.
 \tag{23}
 $$
 
 ### 5.2 Both-bad state
 
-The orthogonal projector onto $`\operatorname{ran}P_1+\operatorname{ran}P_2`$ is
+The orthogonal projector onto $`\mathrm{ran}P_1+\mathrm{ran}P_2`$ is
 
 $$
 H=\frac{P_1+P_2-P_1P_2-P_2P_1}{t}.
 \tag{24}
 $$
 
-Indeed, (8) gives $`HP_i=P_i`$, while $`H`$ vanishes on $`\ker P_1\cap\ker P_2`$. It is Hermitian and its range is contained in $`\operatorname{ran}P_1+\operatorname{ran}P_2`$, proving that it is the orthogonal projector onto that span. The two ranges intersect trivially because $`c<1`$, so $`\operatorname{rank}H=2d`$.
+Indeed, (8) gives $`HP_i=P_i`$, while $`H`$ vanishes on $`\ker P_1\cap\ker P_2`$. It is Hermitian and its range is contained in $`\mathrm{ran}P_1+\mathrm{ran}P_2`$, proving that it is the orthogonal projector onto that span. The two ranges intersect trivially because $`c<1`$, so $`\mathrm{rank}H=2d`$.
 
 Consequently,
 
 $$
 K=I-H,\qquad
-\operatorname{Tr}K=d^3-2d>0,\qquad
+\mathrm{Tr}K=d^3-2d>0,\qquad
 B=\frac{K}{d^3-2d}
 \tag{25}
 $$
@@ -278,8 +278,8 @@ $$
 define a positive normalized state. It is invariant under swapping $`B_1,B_2`$ and under the same unitary covariance. Both its Bell weights vanish, hence
 
 $$
-\operatorname{Tr}_{B_2}B
-=\operatorname{Tr}_{B_1}B
+\mathrm{Tr}_{B_2}B
+=\mathrm{Tr}_{B_1}B
 =\tau_0.
 \tag{26}
 $$
@@ -405,7 +405,7 @@ $$
 The conditional error has an exact diamond-norm interpretation:
 
 $$
-\frac12\|\mathcal E_0-\operatorname{id}\|_\diamond
+\frac12\|\mathcal E_0-\mathrm{id}\|_\diamond
 =1-F_e(\mathcal E_0)
 =\frac{d^2-1}{N+d^2-1}.
 \tag{37}

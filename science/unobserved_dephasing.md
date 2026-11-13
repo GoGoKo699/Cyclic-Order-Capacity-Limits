@@ -22,14 +22,14 @@ Write
 
 $$
 \tau_d=\frac{I_d}{d},\qquad
-\mathcal T(X)=\operatorname{Tr}(X)\tau_d,\qquad
+\mathcal T(X)=\mathrm{Tr}(X)\tau_d,\qquad
 \Delta_C(Y)=\sum_{j=0}^{N-1}|j\rangle\langle j|Y|j\rangle\langle j|.
 $$
 
 The specified noise is the physical channel
 
 $$
-\mathcal D_v=v\,\operatorname{id}_C+(1-v)\Delta_C.
+\mathcal D_v=v\,\mathrm{id}_C+(1-v)\Delta_C.
 \tag{1}
 $$
 
@@ -52,7 +52,7 @@ $$
 \tag{2}
 $$
 
-The formula is an equality of linear maps and extends to arbitrary ancillas by the identity map. The diagonal order blocks give $`\mathcal T`$ and every off-diagonal cyclic-order block gives $`\operatorname{id}/d^2`$ before the factor $`v`$ from (1).
+The formula is an equality of linear maps and extends to arbitrary ancillas by the identity map. The diagonal order blocks give $`\mathcal T`$ and every off-diagonal cyclic-order block gives $`\mathrm{id}/d^2`$ before the factor $`v`$ from (1).
 
 The number $`v`$ therefore describes a channel on the order register, rather than just the visibility of its reduced state. For example, a known random phase $`Z^\ell|+\rangle`$, with $`\ell`$ retained in an accessible register, can have the completely mixed reduced control state. The receiver can nevertheless undo $`Z^\ell`$ after traversal and recover ideal uniform-control performance. That preparation has low reduced visibility but has not suffered inaccessible physical noise of the form (1). Likewise, a global channel (1) is not a general description of independent phase errors on a multi-qubit implementation of $`C`$.
 
@@ -97,7 +97,7 @@ $$
 \Phi_d=|\Phi_d\rangle\langle\Phi_d|,
 $$
 
-the two reference-target blocks of $`J_{N,v}=(\operatorname{id}_R\otimes\mathcal N_{N,v})(\Phi_d)`$ are
+the two reference-target blocks of $`J_{N,v}=(\mathrm{id}_R\otimes\mathcal N_{N,v})(\Phi_d)`$ are
 
 $$
 J^{N,v}_0=\frac{I_{RB}+v(N-1)\Phi_d}{Nd^2},\qquad
@@ -175,15 +175,15 @@ with the same Haar-distributed $`U`$. These operations preserve positivity, exch
 The first receiver's good marginal is
 
 $$
-\operatorname{Tr}_{B_2}(\Omega_{00}+\Omega_{01})=q\Phi_{RB_1}.
+\mathrm{Tr}_{B_2}(\Omega_{00}+\Omega_{01})=q\Phi_{RB_1}.
 \tag{11}
 $$
 
-A positive operator with a rank-one marginal factorizes across that marginal: if $`\operatorname{Tr}_Z X=c|\phi\rangle\langle\phi|`$, then $`X=|\phi\rangle\langle\phi|\otimes M_Z`$ for a positive $`M_Z`$ of trace $`c`$. Positivity removes every joint vector outside the rank-one marginal support.
+A positive operator with a rank-one marginal factorizes across that marginal: if $`\mathrm{Tr}_Z X=c|\phi\rangle\langle\phi|`$, then $`X=|\phi\rangle\langle\phi|\otimes M_Z`$ for a positive $`M_Z`$ of trace $`c`$. Positivity removes every joint vector outside the rank-one marginal support.
 
 There is no nonzero $`\Omega_{00}`$. Indeed, the first good marginal would force $`\Omega_{00}=\Phi_{RB_1}\otimes M_{B_2}`$. Its $`RB_2`$ marginal is $`I_R/d\otimes M_{B_2}`$. If nonzero, this has rank at least $`d`$, whereas it must be supported inside the rank-one projector $`\Phi_{RB_2}`$ required by the other good marginal. Since $`d\geq2`$, this is impossible.
 
-It follows from (11) that $`\Omega_{01}=\Phi_{RB_1}\otimes M_{B_2}`$ with $`\operatorname{Tr}M=q`$. The covariance average makes $`M=qI_{B_2}/d`$. Exchange symmetry fixes the other cross sector:
+It follows from (11) that $`\Omega_{01}=\Phi_{RB_1}\otimes M_{B_2}`$ with $`\mathrm{Tr}M=q`$. The covariance average makes $`M=qI_{B_2}/d`$. Exchange symmetry fixes the other cross sector:
 
 $$
 \Omega_{01}=q\Phi_{RB_1}\otimes\frac{I_{B_2}}d,\qquad
@@ -236,7 +236,7 @@ $$
 \tag{17}
 $$
 
-The weights sum to $`1-2v/d^2=\operatorname{Tr}R_v`$. The first state in (16) is a product state. For the second, choose two distinct computational basis vectors $`e_0,e_1\in\mathbb C^d`$ and use the identity
+The weights sum to $`1-2v/d^2=\mathrm{Tr}R_v`$. The first state in (16) is a product state. For the second, choose two distinct computational basis vectors $`e_0,e_1\in\mathbb C^d`$ and use the identity
 
 $$
 \frac{I_{RB}-\Phi_d}{d^2-1}
@@ -277,9 +277,9 @@ The exact finite-$`N`$ boundary at general $`v`$ is not needed for (20). Above (
 For $`N>1`$, define the channel on the order register
 
 $$
-\mathcal L=\frac{N\Delta_C-\operatorname{id}_C}{N-1},
+\mathcal L=\frac{N\Delta_C-\mathrm{id}_C}{N-1},
 \qquad
-\mathcal L_0=\operatorname{id}_C,\quad\mathcal L_1=\mathcal L.
+\mathcal L_0=\mathrm{id}_C,\quad\mathcal L_1=\mathcal L.
 \tag{21}
 $$
 
@@ -303,7 +303,7 @@ $$
 For example, the coefficient of $`\mathcal T(X)`$ is
 $`(Y+(N-1)\mathcal L(Y))/N=\Delta_C(Y)`$, and the coefficient of $`vX/d^2`$ is $`Y-\Delta_C(Y)`$, as in (2). Hence the controller simulation uses the same map for all $`v`$ and is compatible with the physical placement of the dephasing.
 
-For one arbitrary input-independent state $`\omega_{CA}`$, prepare $`\omega`$ after observing flag $`0`$, or prepare $`(\mathcal L\otimes\operatorname{id}_A)(\omega)`$ after observing flag $`1`$. Keep the received target unchanged. This is a receiver channel $`\mathcal R_\omega`$ and satisfies
+For one arbitrary input-independent state $`\omega_{CA}`$, prepare $`\omega`$ after observing flag $`0`$, or prepare $`(\mathcal L\otimes\mathrm{id}_A)(\omega)`$ after observing flag $`1`$. Keep the received target unchanged. This is a receiver channel $`\mathcal R_\omega`$ and satisfies
 
 $$
 \mathcal S_{N,v}(\,\cdot\,\otimes\omega)
@@ -319,7 +319,7 @@ $$
 \sum_{\mathbf f\in\{0,1\}^m}
 \left(\bigotimes_{i=1}^m\mathcal A^{N,v}_{f_i}\right)(\rho)
 \otimes
-\left(\bigotimes_{i=1}^m\mathcal L_{f_i}\otimes\operatorname{id}_A\right)(\omega).
+\left(\bigotimes_{i=1}^m\mathcal L_{f_i}\otimes\mathrm{id}_A\right)(\omega).
 \tag{24}
 $$
 
@@ -408,9 +408,9 @@ This value of $`v`$ is exactly the limiting antidegradability boundary for qubit
 The pure-good-marginal argument has the same structure as the exact shareability theorem in [Quantum-Monitoring-Thresholds, Shareability and universal coding bounds](https://github.com/GoGoKo699/Quantum-Monitoring-Thresholds/blob/3f451dc0b63068a256f193e64f7ea8b83f2c1d6b/science/shareability.md). That theorem studies
 
 $$
-\delta\,\operatorname{id}\ \oplus\ p\,\mathcal M,
+\delta\,\mathrm{id}\ \oplus\ p\,\mathcal M,
 \qquad
-\mathcal M(\rho)=\sum_y\operatorname{Tr}(E_y\rho)|y\rangle\langle y|,
+\mathcal M(\rho)=\sum_y\mathrm{Tr}(E_y\rho)|y\rangle\langle y|,
 $$
 
 and obtains $`k`$-self-compatibility exactly when

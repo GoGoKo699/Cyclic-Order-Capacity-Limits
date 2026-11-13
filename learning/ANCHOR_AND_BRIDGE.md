@@ -48,10 +48,10 @@ Wilde's Definition 4.4.4 uses the unnormalized vector $`|\Gamma\rangle=\sum_x|x,
 $$
 \Phi=\frac{|\Gamma\rangle\langle\Gamma|}{d},
 \qquad
-J(\mathcal N)=(\operatorname{id}_R\otimes\mathcal N)(\Phi).
+J(\mathcal N)=(\mathrm{id}_R\otimes\mathcal N)(\Phi).
 $$
 
-Thus the repository's $`J`$ is the Choi operator in that definition divided by the input dimension $`d`$. For a trace-preserving channel, $`\operatorname{Tr}J=1`$ and its reference marginal is $`I_R/d`$. In a flagged channel, the individual Choi blocks are subnormalized: their traces are branch probabilities. Normalizing a block changes the question to a conditional channel.
+Thus the repository's $`J`$ is the Choi operator in that definition divided by the input dimension $`d`$. For a trace-preserving channel, $`\mathrm{Tr}J=1`$ and its reference marginal is $`I_R/d`$. In a flagged channel, the individual Choi blocks are subnormalized: their traces are branch probabilities. Normalizing a block changes the question to a conditional channel.
 
 The symbol $`\Phi_d`$ in the dephasing proof denotes the same normalized maximally entangled projector as $`\Phi`$ in the ideal proof. The identity $`I_{RB}`$ has trace $`d^2`$; it is not the maximally mixed state.
 
@@ -62,7 +62,7 @@ The source's optimized one-use information quantities in Sections 13.5–13.6 mu
 Here $`F_e`$ is entanglement fidelity for the maximally mixed target input, evaluated by retaining its maximally entangled purification. For a conditional channel $`\mathcal E_0`$,
 
 $$
-F_e=\operatorname{Tr}\!\left[\Phi J(\mathcal E_0)\right].
+F_e=\mathrm{Tr}\!\left[\Phi J(\mathcal E_0)\right].
 $$
 
 This differs from fidelity of a single pure target state. Both conventions appear in the worked example below.
@@ -100,7 +100,7 @@ The equivalence concerns uniform control. Other allowed preparations inherit the
 The [dephasing model](../science/unobserved_dephasing.md) applies the physical channel
 
 $$
-\mathcal D_v=v\operatorname{id}_C+(1-v)\Delta_C
+\mathcal D_v=v\mathrm{id}_C+(1-v)\Delta_C
 $$
 
 to the prepared order register, with its environment or random phase label unavailable to the receiver. A reduced controller state alone does not determine whether this physical noise has occurred: a retained phase record can permit recovery. The proof therefore keeps the channel, its placement, and the unavailable record explicit.

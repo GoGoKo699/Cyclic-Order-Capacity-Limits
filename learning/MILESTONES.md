@@ -324,7 +324,7 @@ The allocation is **12 background/preliminaries milestones and 18 narrative/inno
 
 **Central question:** Which loss of order coherence is strong enough to support the noise theorem?
 
-**Understanding target:** Specify the channel $`\mathcal D_v=v\,\operatorname{id}+(1-v)\Delta_C`$, its location, and the inaccessibility of its environment. Explain the example in which a retained phase label permits correction despite a low-visibility reduced controller state.
+**Understanding target:** Specify the channel $`\mathcal D_v=v\,\mathrm{id}+(1-v)\Delta_C`$, its location, and the inaccessibility of its environment. Explain the example in which a retained phase label permits correction despite a low-visibility reduced controller state.
 
 **Dependencies and story role:** M06, M12–M14, M17. Introduce the noisy model while keeping operationally different kinds of lost coherence separate.
 
