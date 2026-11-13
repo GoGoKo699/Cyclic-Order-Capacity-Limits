@@ -25,7 +25,7 @@ The raw Kraus calculation is independent of the simplified channel formula. The 
 
 ## Saved result and limitations
 
-[results.json](results.json) records the output, numerical tolerance, NumPy version and SHA256 of the exact verification script. The saved run passed all listed assertions with NumPy 2.3.5 and tolerance $2\times10^{-11}$. Small negative eigenvalues at floating-point roundoff are interpreted using that tolerance.
+[results.json](results.json) records the output, numerical tolerance, NumPy version and SHA256 of the exact verification script. The saved run passed all listed assertions with NumPy 2.3.5 and tolerance $`2\times10^{-11}`$. Small negative eigenvalues at floating-point roundoff are interpreted using that tolerance.
 
 The calculations do not infer an arbitrary-dimension theorem from a finite sample, estimate quantum or private capacities above the antidegradability boundary, optimize arbitrary permutations, or validate a hardware noise model. The proof files give those boundaries explicitly.
 
