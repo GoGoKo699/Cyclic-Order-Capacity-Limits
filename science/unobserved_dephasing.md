@@ -142,7 +142,7 @@ Let $`\mathcal T_0(X)=\mathcal T(X)\otimes|0\rangle\langle0|`$. Direct substitut
 In particular,
 
 ```math
-\Vert\mathcal N_{N,v}-\mathcal N_{\infty,v}\Vert_\diamond\leq\frac2N.
+\Vert \mathcal N_{N,v}-\mathcal N_{\infty,v}\Vert _\diamond\leq\frac2N.
 \qquad\text{(10)}
 ```
 

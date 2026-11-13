@@ -260,7 +260,7 @@ All control indices are modulo $`N`$. Orthogonality of the output control basis 
 
 ```math
 \sum_sK_s^\dagger K_s
-=\sum_{s,i}\Verta_i\Vert^2|i-s\rangle\langle i-s|
+=\sum_{s,i}\Vert a_i\Vert ^2|i-s\rangle\langle i-s|
 =I_C.
 \qquad\text{(24)}
 ```
@@ -317,7 +317,7 @@ For a pure joint preparation, write
 ```math
 |\psi\rangle=\sum_{\mathbf i\in G}|\mathbf i\rangle|a_{\mathbf i}\rangle,
 \qquad
-\sum_{\mathbf i}\Verta_{\mathbf i}\Vert^2=1,
+\sum_{\mathbf i}\Vert a_{\mathbf i}\Vert ^2=1,
 \qquad\text{(29)}
 ```
 

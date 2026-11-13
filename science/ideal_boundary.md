@@ -104,7 +104,7 @@ P_1P_2P_1=cP_1,
 \qquad
 P_2P_1P_2=cP_2,
 \qquad
-\VertP_1+P_2\Vert_\infty=1+\frac1d.
+\Vert P_1+P_2\Vert _\infty=1+\frac1d.
 \qquad\text{(8)}
 ```
 
@@ -122,7 +122,7 @@ Let $`Q_2=I-P_2`$. The positive operator $`Q_2P_1Q_2`$ satisfies
 Consequently,
 
 ```math
-\VertQ_2P_1Q_2\Vert_\infty=t.
+\Vert Q_2P_1Q_2\Vert _\infty=t.
 \qquad\text{(10)}
 ```
 
@@ -405,7 +405,7 @@ Q(\mathcal C_{N_\star,d})=P(\mathcal C_{N_\star,d})=0.
 The conditional error has an exact diamond-norm interpretation:
 
 ```math
-\frac12\Vert\mathcal E_0-\mathrm{id}\Vert_\diamond
+\frac12\Vert \mathcal E_0-\mathrm{id}\Vert _\diamond
 =1-F_e(\mathcal E_0)
 =\frac{d^2-1}{N+d^2-1}.
 \qquad\text{(37)}
