@@ -16,7 +16,7 @@ Here $`\mathcal N_{\infty,v}`$ is the limit of the uniformly controlled channels
 
 ## 1. Physical channel and noise placement
 
-Each device uses $`N`$ independent completely depolarizing channels on a $`d`$-dimensional target, with the target traversing every channel in one of the $`N`$ cyclic orders. The order register $`C`$ has basis $`\{|j\rangle:0\leq j<N\}`$. There is no target-carrying bypass, and the controller is prepared independently of the entire encoded target and reference.
+Each device uses $`N`$ independent completely depolarizing channels on a $`d`$-dimensional target, with the target traversing every channel in one of the $`N`$ cyclic orders. The order register $`C`$ has basis $`\{|j\rangle:0\leq j\lt N\}`$. There is no target-carrying bypass, and the controller is prepared independently of the entire encoded target and reference.
 
 Write
 
@@ -142,7 +142,7 @@ Let $`\mathcal T_0(X)=\mathcal T(X)\otimes|0\rangle\langle0|`$. Direct substitut
 In particular,
 
 ```math
-\|\mathcal N_{N,v}-\mathcal N_{\infty,v}\|_\diamond\leq\frac2N.
+\Vert\mathcal N_{N,v}-\mathcal N_{\infty,v}\Vert_\diamond\leq\frac2N.
 \qquad\text{(10)}
 ```
 

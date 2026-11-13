@@ -104,7 +104,7 @@ P_1P_2P_1=cP_1,
 \qquad
 P_2P_1P_2=cP_2,
 \qquad
-\|P_1+P_2\|_\infty=1+\frac1d.
+\VertP_1+P_2\Vert_\infty=1+\frac1d.
 \qquad\text{(8)}
 ```
 
@@ -122,7 +122,7 @@ Let $`Q_2=I-P_2`$. The positive operator $`Q_2P_1Q_2`$ satisfies
 Consequently,
 
 ```math
-\|Q_2P_1Q_2\|_\infty=t.
+\VertQ_2P_1Q_2\Vert_\infty=t.
 \qquad\text{(10)}
 ```
 
@@ -264,7 +264,7 @@ H=\frac{P_1+P_2-P_1P_2-P_2P_1}{t}.
 \qquad\text{(24)}
 ```
 
-Indeed, (8) gives $`HP_i=P_i`$, while $`H`$ vanishes on $`\ker P_1\cap\ker P_2`$. It is Hermitian and its range is contained in $`\mathrm{ran}P_1+\mathrm{ran}P_2`$, proving that it is the orthogonal projector onto that span. The two ranges intersect trivially because $`c<1`$, so $`\mathrm{rank}H=2d`$.
+Indeed, (8) gives $`HP_i=P_i`$, while $`H`$ vanishes on $`\ker P_1\cap\ker P_2`$. It is Hermitian and its range is contained in $`\mathrm{ran}P_1+\mathrm{ran}P_2`$, proving that it is the orthogonal projector onto that span. The two ranges intersect trivially because $`c\lt 1`$, so $`\mathrm{rank}H=2d`$.
 
 Consequently,
 
@@ -405,7 +405,7 @@ Q(\mathcal C_{N_\star,d})=P(\mathcal C_{N_\star,d})=0.
 The conditional error has an exact diamond-norm interpretation:
 
 ```math
-\frac12\|\mathcal E_0-\mathrm{id}\|_\diamond
+\frac12\Vert\mathcal E_0-\mathrm{id}\Vert_\diamond
 =1-F_e(\mathcal E_0)
 =\frac{d^2-1}{N+d^2-1}.
 \qquad\text{(37)}

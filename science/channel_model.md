@@ -85,7 +85,7 @@ where the first factor is empty for $`i=0`$, so $`L_0=K_N\cdots K_1`$. A Kraus r
 
 For $`i=j`$, this is a composition of completely depolarizing channels and equals $`\mathcal D_d(X)`$.
 
-For $`i\ne j`$, cyclic relabeling reduces the calculation to $`i=0`$ and $`j=k`$, with $`1\le k<N`$. Set $`a_0=a_N`$. In $`L_0`$, the matrix-unit contractions impose $`b_j=a_{j-1}`$ for every $`j`$ except $`j=1`$. In $`L_k`$, the only omitted constraint is $`j=k+1`$. Together the two products impose all $`N`$ constraints. The cross term is consequently
+For $`i\ne j`$, cyclic relabeling reduces the calculation to $`i=0`$ and $`j=k`$, with $`1\le k\lt N`$. Set $`a_0=a_N`$. In $`L_0`$, the matrix-unit contractions impose $`b_j=a_{j-1}`$ for every $`j`$ except $`j=1`$. In $`L_k`$, the only omitted constraint is $`j=k+1`$. Together the two products impose all $`N`$ constraints. The cross term is consequently
 
 ```math
 d^{-N}|a_N\rangle
@@ -260,7 +260,7 @@ All control indices are modulo $`N`$. Orthogonality of the output control basis 
 
 ```math
 \sum_sK_s^\dagger K_s
-=\sum_{s,i}\|a_i\|^2|i-s\rangle\langle i-s|
+=\sum_{s,i}\Verta_i\Vert^2|i-s\rangle\langle i-s|
 =I_C.
 \qquad\text{(24)}
 ```
@@ -317,7 +317,7 @@ For a pure joint preparation, write
 ```math
 |\psi\rangle=\sum_{\mathbf i\in G}|\mathbf i\rangle|a_{\mathbf i}\rangle,
 \qquad
-\sum_{\mathbf i}\|a_{\mathbf i}\|^2=1,
+\sum_{\mathbf i}\Verta_{\mathbf i}\Vert^2=1,
 \qquad\text{(29)}
 ```
 
